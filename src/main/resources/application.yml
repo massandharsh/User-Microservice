@@ -1,0 +1,25 @@
+#Server config
+server:
+  port: 5000
+  servlet:
+    context-path: "/api/v1"
+
+#Spring JPA config
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:mysql://localhost:3306/userservicetestfinalapplication
+    username: userservice
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#Spring Security
+logging:
+  level:
+    org.springframework.security: trace
+
+
+
+
